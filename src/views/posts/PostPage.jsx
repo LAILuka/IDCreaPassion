@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from 'react-router-dom';
-import { API_URL } from '../config';
-import Skeleton from "@mui/material/Skeleton";
-import Grid from '@mui/material/Grid';
-
+import {useParams, Link} from 'react-router-dom';
+import { API_URL } from '../../config';
+import { Button, Container, Grid, Skeleton} from '@mui/material';
 
 
 export default function PostPage (){
@@ -19,7 +17,7 @@ export default function PostPage (){
                 setTimeout(() => {
                     setPost(res)
                     setIsLoading(true)
-                }, 2000)
+                }, 1000)
             
             })
     }) 
@@ -27,10 +25,20 @@ export default function PostPage (){
     
     return(
         <div>
+            <Container>
+                <div>
+                    <Link to="/posts">
+                        <Button variant="contained" color= "primary">
+                          Retour
+                        </Button>
+                    </Link>
+                </div>
+
+
             <Grid container spacing={2}>
                 <Grid item sm={6}>
-                    {/*isLoading ? `<img src="${ API_URL + postState.attributes.image.data[0].attributes.formats.small.url}"/>` : <Skeleton variant="rect" width="100%" height={400} />*/}
-                </Grid>
+                    {isLoading ? <img src= {API_URL + postState?.data?.attributes?.image?.data[0]?.attributes?.formats?.small?.url} alt=""/> : <Skeleton variant="rect" width="100%" height={400} />}
+               </Grid>
                 <Grid item sm={5}>
                     <h1>{isLoading ? postState.data.attributes.title : <Skeleton variant='text' width={300} height={80}/>}</h1>
                     <p>
@@ -46,8 +54,7 @@ export default function PostPage (){
                     </p>
                 </Grid>
             </Grid>
-            
-           
+            </Container>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import Home from './components/Home';
-import PostsListe from './components/PostsListe';
-import PostPage from './components/PostPage';
+import Home from './views/home/Home';
+import PostsListe from './views/posts/PostsListe';
+import PostPage from './views/posts/PostPage';
 import {BrowserRouter,Routes, Route} from 'react-router-dom';
 
 
