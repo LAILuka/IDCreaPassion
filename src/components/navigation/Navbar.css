@@ -20,7 +20,13 @@ nav{
     margin-right: 60px;
     cursor: pointer;
     font-size: large;
+    color: white;
 }
+.items a {
+    color: white !important;
+    text-decoration: none;
+}
+
 .btn{
     display: none;
 }

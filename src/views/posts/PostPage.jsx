@@ -17,7 +17,7 @@ export default function PostPage (){
                 setTimeout(() => {
                     setPost(res)
                     setIsLoading(true)
-                }, 1000)
+                }, 500)
             
             })
     }) 
