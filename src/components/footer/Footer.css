@@ -1,0 +1,50 @@
+.ng-footer.ng-footer-simple {
+	background-color:#002855;
+	color:#fff;
+	text-align:center;
+	padding:30px;
+}
+.ng-footer-contact {
+	display:flex;
+	flex-direction:column;
+}
+.ng-footer-section {
+	display:inline-block;
+	flex:1;
+	padding:20px 0;
+}
+.ng-link-standalone {
+	color:#f0c200;
+	text-transform:uppercase;
+	font-style:bolder;
+	text-decoration:none;
+}
+.ng-link-standalone:first-child {
+	margin-right:20px;
+}
+img {
+	max-width:250px;
+	padding:15px 0;
+}
+.ng-footer-address ul {
+	list-style-type:none;
+	padding-left:0;
+	line-height:1.4em;
+}
+.ng-footer-social-icons svg {
+	fill:#fff;
+	margin:0 10px;
+}
+@media screen and (min-width:992px) {
+	.ng-footer-contact {
+		flex-direction:row;
+		align-items:center;
+	}
+  .ng-footer-social-icons svg:hover {
+  	transform:scale(1.2);
+  	transition:all .2s ease;
+  }
+  .ng-link-standalone:hover {
+  	text-decoration:underline;
+  }
+}

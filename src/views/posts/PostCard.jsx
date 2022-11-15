@@ -7,13 +7,14 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { API_URL } from '../../config';
 import { Link } from 'react-router-dom';
+import "./PostCard.css";
 
 export default function PostCard({post}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="300"
         image= {post.attributes.image !== null ? API_URL + post.attributes.image.data[0].attributes.formats.small.url : "..."}
         alt="green iguana"
       />
@@ -27,7 +28,7 @@ export default function PostCard({post}) {
       </CardContent>
       <CardActions>
         <Link to={"/post/"+ post.id}>
-          <Button size="small">Learn More</Button>
+          <Button size="small">Voir plus...</Button>
         </Link>
       </CardActions>
     </Card>

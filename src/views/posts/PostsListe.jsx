@@ -55,7 +55,7 @@ export default function PostsListe() {
             <Navbar/>    
         <div className="posts">   
             <Container>
-            <h1>Liste des articles</h1>
+            <h1>Liste des mes articles</h1>
             <Grid container spacing={2}>
                 {isLoading ? 
                     <>
