@@ -5,6 +5,7 @@ import Skeleton from "@mui/material/Skeleton";
 import { API_URL } from "../../config";
 import Container from '@mui/material/Container';
 import Navbar from "../../components/navigation/Navbar";
+import Footer from '../../components/footer/Footer';
 import "./PostsListe.css";
 
 
@@ -67,8 +68,12 @@ export default function PostsListe() {
                     </div>
                 )}   
             </Grid>
+            
             </Container>
+               
         </div>
+        <Footer/>
         </div>  
+          
     )
 }
