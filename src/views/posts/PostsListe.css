@@ -3,6 +3,8 @@
     display: inline-block !important;
     margin-top: 30px;
 }
-.post{
+.posts{
+    padding-top: 30px;
     margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
