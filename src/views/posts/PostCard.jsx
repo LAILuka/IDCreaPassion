@@ -16,7 +16,7 @@ export default function PostCard({post}) {
         component="img"
         height="300"
         image= {post.attributes.image !== null ? API_URL + post.attributes.image.data[0].attributes.formats.small.url : "..."}
-        alt="green iguana"
+        alt=""
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

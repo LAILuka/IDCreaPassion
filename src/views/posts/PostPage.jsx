@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useParams, Link} from 'react-router-dom';
 import { API_URL } from '../../config';
 import { Button, Container, Grid, Skeleton} from '@mui/material';
-
+import Footer from "../../components/footer/Footer"
+import Navbar from '../../components/navigation/Navbar';
 
 export default function PostPage (){
 
@@ -25,9 +26,10 @@ export default function PostPage (){
     
     return(
         <div>
+            <Navbar/>
             <Container>
                 <div>
-                    <Link to="/posts">
+                    <Link to="/">
                         <Button variant="contained" color= "primary">
                           Retour
                         </Button>
@@ -55,6 +57,7 @@ export default function PostPage (){
                 </Grid>
             </Grid>
             </Container>
+            <Footer/>
         </div>
     )
 }

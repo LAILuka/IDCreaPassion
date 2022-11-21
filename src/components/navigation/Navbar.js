@@ -45,12 +45,10 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="items">
-                        <Link to="/posts">
-                            Posts
+                        <Link to="/contact">
+                            Contact
                         </Link>
                     </li>
-                    <li className="items">Services</li>
-                    <li className="items">Contact</li>
                 </ul>
             )}
             {toggleMenu ? CloseIcon : HamburgerIcon}  
