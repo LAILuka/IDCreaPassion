@@ -6,5 +6,13 @@
 .posts{
     padding-top: 30px;
     margin-top: 10px;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media screen and (max-width: 500px) {
+    .posts {
+        justify-content: center;
+        align-items: center;
+    }
+  }

@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { API_URL } from '../../config';
 import { Link } from 'react-router-dom';
@@ -11,7 +10,7 @@ import "./PostCard.css";
 
 export default function PostCard({post}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className="test">
       <CardMedia
         component="img"
         height="300"
@@ -28,9 +27,10 @@ export default function PostCard({post}) {
       </CardContent>
       <CardActions>
         <Link to={"/post/"+ post.id}>
-          <Button size="small">Voir plus...</Button>
+          <button className='button' size="small">Voir plus...</button>
         </Link>
       </CardActions>
+      
     </Card>
   );
 }

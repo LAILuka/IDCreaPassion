@@ -67,9 +67,7 @@ export default function PostsListe() {
                     </div>
                 )}   
             </Grid>
-            
             </Container>
-               
         </div>
         <Footer/>
         </div>  

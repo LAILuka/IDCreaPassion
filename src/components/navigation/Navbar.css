@@ -1,7 +1,7 @@
 nav{
     height: 60px;
     background: linear-gradient(45deg, rgb(156,14,156),midnightblue);
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .liste{
@@ -33,7 +33,7 @@ nav{
 
 
 @media screen and (max-width: 500px){
-    
+  
     .liste{
         flex-direction: column;
         height: 200px;

@@ -15,7 +15,7 @@ export default function Footer() {
          <footer className="footer">
             <p className="copyright">© 2002 IDCréaPassion </p>
             <div className="social">
-                <IconButton target="_blank" href="https://mui.com/material-ui/react-link/"><FacebookIcon sx={{ color: grey[50] }}/></IconButton>
+                <IconButton target="_blank" href="https://m.facebook.com/Jaunette01/"><FacebookIcon sx={{ color: grey[50] }}/></IconButton>
                 <IconButton target="_blank" href="https://mui.com/material-ui/react-link/"><InstagramIcon sx={{ color: grey[50] }}/></IconButton>
                 <IconButton target="_blank" href="https://mui.com/material-ui/react-link/"><PinterestIcon sx={{ color: grey[50] }}/></IconButton>
                 <IconButton target="_blank" href="https://mui.com/material-ui/react-link/"><YouTubeIcon sx={{ color: grey[50] }}/></IconButton>   
