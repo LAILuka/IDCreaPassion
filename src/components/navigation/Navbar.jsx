@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import "./Navbar.css";
 import {HiOutlineMenu} from 'react-icons/hi';
 import {IoClose} from 'react-icons/io5';
 import {Link} from 'react-router-dom';
 
-
+/*
 export default function Navbar() {
     
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -55,3 +55,31 @@ export default function Navbar() {
         </nav>
     )
 }
+*/
+
+function Navbar() {
+    const[showLinks, setShowLinks] = useState(false)
+
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
+    return (
+        <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+            <div className="navbar_logo">Logo
+                <img src=""></img>
+            </div>
+            <ul className="navbar_links">
+                <li className="navbar_item">
+                    <a href="/" className="navbar_link">Accueil</a> 
+                </li>
+                <li className="navbar_item">
+                    <a href="/" className="navbar_link">Contact</a> 
+                </li>
+            </ul>
+            <button className="navbar_burger" onClick={handleShowLinks}>
+                <span className="burger-bar"></span>
+            </button>
+        </nav>
+    )
+}
+export default Navbar

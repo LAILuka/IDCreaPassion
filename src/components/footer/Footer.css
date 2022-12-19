@@ -19,4 +19,5 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    background: linear-gradient(45deg, rgb(156,14,156),midnightblue);
 }
